@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ReadTheory Read-Aloud Popup Remover",
+  "version": "1.0",
+  "description": "Removes the read-aloud popup on ReadTheory",
+  "author": "Lucas H",
+  "content_scripts": [{
+    "matches": ["*://*.readtheoryapp.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
